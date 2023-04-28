@@ -10,6 +10,7 @@ const Navigation = () => {
             <Nav className="">
                 <Nav.Link href="/classification">Image Classifier</Nav.Link>
                 <Nav.Link href="/history">History</Nav.Link>
+                <Nav.Link href="/faq">FAQ</Nav.Link>
             </Nav>
         </Navbar>
     );
