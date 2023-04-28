@@ -42,7 +42,7 @@ class ImageList extends Component {
         })
         return (
             <div>
-                <h1>Image List</h1>
+                <h1 style={{ color: "#fff", fontWeight:'800' }}>Image List</h1>
                 {this.state.isLoading ?
                     <Spinner animation="border" role="status"></Spinner>
                     :
@@ -53,12 +53,12 @@ class ImageList extends Component {
                         {images}
                         {(this.state.images.length > this.state.visible) ?
                             <Button variant='primary' size='lg' onClick={this.handleVisible}>Load more</Button>
-                        :
-                        
+                            :
+
                             <h3>No more images to load</h3>
                         }
-                            
-                        
+
+
                     </React.Fragment>
                 }
             </div>
