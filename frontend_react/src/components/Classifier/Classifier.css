@@ -1,6 +1,6 @@
 .back {
-    background: #f8f8f8;
-    border: 3px dashed #f0f0f0;
+    background: #000;
+    border: 3px dashed #000;
     border-radius: 5px;
     width: 100%;
     margin: 10px 0;
@@ -10,5 +10,29 @@
 }
 
 .back:hover {
-    border: 3px dashed deepskyblue;
+    border: 3px dashed cyan;
+}
+
+.back p{
+    color: #fff;
+}
+
+.select-image-btn{
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    outline: none;
+    font-weight: 700;
+    transition: all 0.3a ease;
+}
+
+.select-image-btn:hover{
+    border: 1px solid cyan;
+    background-color: #000;
+    letter-spacing: 2px;
+}
+
+.spinner-border{
+    border: 0.25em solid #fff;
+    border-right-color: transparent;
 }

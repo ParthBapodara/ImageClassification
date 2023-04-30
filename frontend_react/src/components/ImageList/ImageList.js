@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Button, Spinner } from 'react-bootstrap';
 import Image from './Image';
+import './ImageList.css'
 
 class ImageList extends Component {
 
@@ -41,7 +42,7 @@ class ImageList extends Component {
             return <Image key={img.id} pic={img.picture} name={img.classified} />
         })
         return (
-            <div>
+            <div style={{padding:"30px 0"}}>
                 <h1 style={{ color: "#fff", fontWeight:'800' }}>Image List</h1>
                 {this.state.isLoading ?
                     <Spinner animation="border" role="status"></Spinner>
@@ -52,7 +53,7 @@ class ImageList extends Component {
                         }
                         {images}
                         {(this.state.images.length > this.state.visible) ?
-                            <Button variant='primary' size='lg' onClick={this.handleVisible}>Load more</Button>
+                            <Button variant='primary' size='lg' className='select-image-btn' onClick={this.handleVisible}>Load more</Button>
                             :
 
                             <h3>No more images to load</h3>

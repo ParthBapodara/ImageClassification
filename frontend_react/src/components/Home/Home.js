@@ -18,21 +18,21 @@ const Home = () => {
                          </svg>
                          <div className='home-right-result-content'>
                               <div className='result'>
-                                   <p>Golden Retriever</p>
+                                   <p>Pomeranian</p>
                               </div>
                               <p>Resultant Category</p>
                          </div>
                     </div>
                     <div className='home-right-side'>
-                         <h1 className='home-title'>Image Classification</h1>
-                         <p>Image classification is the process of categorizing an image into a specific class or category based on its features or visual characteristics. It is an important task in computer vision, with applications in areas such as medical diagnosis, autonomous driving, and image search.</p>
-                         <p>The process of image classification involves the use of deep learning algorithms, such as convolutional neural networks (CNNs), to automatically learn and extract features from the input images. These features are then used to train the classifier to recognize and distinguish between different classes. The accuracy of image classification depends on the quality of the dataset and the training process, as well as the complexity of the images being classified.</p>
+                         <h1 className='home-title'>Pomeranian</h1>
+                         <p>A Pomeranian is a small, toy breed of dog that typically weighs between 3 and 7 pounds. They have a thick, fluffy double coat that can come in a variety of colors, including orange, cream, sable, and black. Their small, pointed ears stand erect, and their eyes are round and dark. Pomeranians have a short snout and a cute, fox-like face.</p>
+                         <p>Pomeranians are known for being playful, energetic, and affectionate. They are intelligent dogs that can be trained easily, but may have a stubborn streak. Due to their small size and adaptability, they make great pets for people living in apartments or small homes. Pomeranians are also social dogs that enjoy being around their owners and thrive on attention.</p>
                          <a href="/classification">Try Now</a>
                     </div>
                </div>
                <div className='home-info-container'>
-                    <h1>Demo Text</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non risus vitae leo auctor euismod non vitae arcu. Curabitur at tortor tincidunt, mollis mi sit amet, porttitor purus. Praesent maximus, arcu non ultricies venenatis, odio ex consequat diam, quis consectetur sem leo in mauris. Cras molestie dictum purus. Vivamus tincidunt, eros sit amet euismod posuere, ante eros tempor ante, tristique fermentum mi nisl vitae nunc. Nullam varius non nisi id cursus. Vivamus et nulla sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras eu ante scelerisque orci finibus lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue orci eget neque faucibus, ut rhoncus velit ullamcorper. Maecenas sodales neque non fringilla cursus. Integer pharetra tincidunt malesuada. Vivamus faucibus elit mauris, eu scelerisque dolor dignissim quis. Nunc sapien ante, pretium id imperdiet vitae, iaculis bibendum diam.</p>
+                    <h1>Image Classification</h1>
+                    <p>Image classification is a process of assigning one or multiple categories or labels to an image based on its visual content. This is typically done using machine learning algorithms that have been trained on a large dataset of labeled images. The goal of image classification is to accurately identify the object(s) or scene(s) depicted in an image. The process of image classification involves several steps, including preprocessing the image data, selecting and training an appropriate machine learning model, fine-tuning the model for optimal performance, and evaluating its accuracy and performance on a test dataset. There are many practical applications of image classification, including object recognition in photos and videos, facial recognition, content-based image retrieval, and medical imaging analysis. It is an important area of research in computer vision and artificial intelligence, with many ongoing efforts to improve the accuracy and efficiency of image classification algorithms.</p>
                </div>
 
                <div className='home-container' style={{ flexDirection: 'row-reverse', backgroundColor: 'deepskyblue' }}>
@@ -48,15 +48,16 @@ const Home = () => {
                          </svg>
                          <div className='home-right-result-content'>
                               <div className='result' style={{ backgroundColor: '#000' }}>
-                                   <p style={{ color: "#fff" }}>Siberian Husky</p>
+                                   <p style={{ color: "#fff" }}>Golden Retriever</p>
                               </div>
                               <p style={{ color: "#000" }}>Resultant Category</p>
                          </div>
                     </div>
                     <div className='home-right-side'>
-                         <h1 className='home-title' style={{ color: "#000" }}>What Is Image Classification</h1>
-                         <p style={{ color: "#000" }}>Image classification is the task of assigning a label or a category to an input image. It is a fundamental problem in computer vision, with numerous real-world applications such as object recognition, face recognition, and medical imaging.</p>
-                         <p style={{ color: "#000" }}>The process of image classification involves training a model on a dataset of labeled images, and then using this model to predict the labels of new, unseen images. Deep learning methods, particularly convolutional neural networks (CNNs), have revolutionized the field of image classification, achieving state-of-the-art performance on a wide range of datasets. Despite their success, image classification models still face challenges such as data bias, overfitting, and adversarial attacks.</p>
+                         <h1 className='home-title' style={{ color: "#000" }}>Golden Retriever</h1>
+                         <p style={{ color: "#000" }}>Golden Retrievers are a medium to large-sized breed of dog that originated in Scotland. They are known for their lustrous, golden coat, which is thick and water-repellent. Their coat can range in shades from light cream to deep red, but all variations have a distinct feathering on the legs, tail, and chest.</p>
+                         <p style={{ color: "#000" }}>Golden Retrievers have a friendly and intelligent expression, with dark, round eyes that convey a sense of warmth and kindness. They have a broad skull and a powerful, muscular build that is balanced by a gentle, wagging tail.</p>
+                         <p style={{ color: "#000" }}>As a breed, Golden Retrievers are known for their affectionate and loyal nature. They are intelligent and easy to train, which makes them a popular choice as service dogs or as family pets.</p>
                          <a href="/classification">Try Now</a>
                     </div>
                </div>

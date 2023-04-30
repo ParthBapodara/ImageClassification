@@ -88,18 +88,18 @@ class Classifier extends Component {
         return (
             <Dropzone onDrop={this.onDrop} accept='image/png, image/jpeg'>
                 {({ isDragActive, getRootProps, getInputProps }) => (
-                    <section className="container">
+                    <section className="container" style={{ marginBottom: "20px" }}>
                         <div {...getRootProps({ className: 'dropzone back' })}>
                             <input {...getInputProps()} />
-                            <i className="far fa-image mb-2 text-muted" style={{ fontSize: 100 }}></i>
-                            <p className='text-muted' >{isDragActive ? 'Drop an image' : 'Drag and drop some files here, or click to select files'}</p>
+                            <i className="far fa-image mb-2" style={{ fontSize: 100, color: "#fff" }}></i>
+                            <p className='' >{isDragActive ? 'Drop an image' : 'Drag and drop some files here, or click to select files'}</p>
                         </div>
-                        <aside>
+                        <aside style={{ color: "#fff", fontWeight: "700" }}>
                             {files}
                         </aside>
 
                         {this.state.files.length > 0 &&
-                            <Button variant='info' size='lg' className='mt-3' onClick={this.sendImage}>Select Image</Button>
+                            <Button variant='info' size='lg' className='mt-3 select-image-btn' onClick={this.sendImage}>Select Image</Button>
                         }
 
                         {this.state.isLoading &&
@@ -111,7 +111,13 @@ class Classifier extends Component {
                             <React.Fragment>
                                 <Image className='justify-content-center mb-2' src={"http://127.0.0.1:8000" + this.state.recentImage.data.picture}
                                     height='200' rounded />
-                                <Alert variant='primary'>
+                                <Alert variant='primary' style={{
+                                    backgroundColor: "#000",
+                                    borderColor: "#000",
+                                    color: "#fff",
+                                    fontWeight: "700",
+                                    textTransform: "capitalize"
+                                }}>
                                     {this.state.recentImage.data.classified}
                                 </Alert>
                             </React.Fragment>
