@@ -11,8 +11,9 @@ const Image = (props) => {
             <Card.Img variant="top" src={props.pic} />
             <Card.Body>
                 <Card.Title style={{
-                    fontWeight: '700'
-                }}>Classified as: {props.name}</Card.Title>
+                    fontWeight: '700',
+                    textTransform: "capitalize"
+                }}>Classified as: {props.name.replace(/_/g, ' ')}</Card.Title>
             </Card.Body>
         </Card>
     )

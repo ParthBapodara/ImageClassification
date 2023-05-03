@@ -109,7 +109,7 @@ class Classifier extends Component {
                         }
                         {this.state.recentImage &&
                             <React.Fragment>
-                                <Image className='justify-content-center mb-2' src={"http://127.0.0.1:8000" + this.state.recentImage.data.picture}
+                                <Image className='justify-content-center mb-2 w-fit h-40 mx-auto object-contain !rounded-xl !overflow-hidden' src={"http://127.0.0.1:8000" + this.state.recentImage.data.picture}
                                     height='200' rounded />
                                 <Alert variant='primary' style={{
                                     backgroundColor: "#000",
@@ -118,7 +118,7 @@ class Classifier extends Component {
                                     fontWeight: "700",
                                     textTransform: "capitalize"
                                 }}>
-                                    {this.state.recentImage.data.classified}
+                                    {this.state.recentImage.data.classified.replace(/_/g, ' ')}
                                 </Alert>
                             </React.Fragment>
                         }
