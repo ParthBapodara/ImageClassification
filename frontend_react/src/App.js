@@ -20,8 +20,8 @@ function App() {
 				<Route path='/classification' component={Classifier} />
 				<Route path='/history' component={ImageList} />
 				<Route path='/faq' component={FAQ} />
-				<Route path='/sign-up' component={SignUp} />
-				<Route path='/login' component={Login} />
+				{/* <Route path='/sign-up' component={SignUp} />
+				<Route path='/login' component={Login} /> */}
 			</div>
 			<Footer />
 		</BrowserRouter>

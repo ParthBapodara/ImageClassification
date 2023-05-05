@@ -13,10 +13,10 @@ const Navigation = () => {
                     <Nav.Link href="/history">History</Nav.Link>
                     <Nav.Link href="/faq">FAQ</Nav.Link>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                {/* <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                     <Nav.Link href="/login" style={{ padding: "9px 30px", backgroundColor: "#000", color: "#fff", fontWeight: "700", borderRadius: "20px" }}>Login</Nav.Link>
                     <Nav.Link href="/sign-up" style={{ padding: "8px 20px", backgroundColor: "deepskyblue", color: "#fff", fontWeight: "700", borderRadius: "20px" }}>Sign Up</Nav.Link>
-                </div>
+                </div> */}
             </Nav>
         </Navbar>
     );
